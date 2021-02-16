@@ -2,9 +2,9 @@ import socket
 
 server_socket = socket.socket()
 
-server_socket.bind((socket.gethostname(),8000))
+server_socket.bind(('',8000))
 
-server_socket.listen(2)
+server_socket.listen(5)
 
 while True:
     client_socket,address = server_socket.accept()
